@@ -1,19 +1,18 @@
 import React from "react";
-import { BrowserRouter as Router, Route } from "react-router-dom";
-import Jumbotron from "./components/Jumbotron/Jumbotron";
-import SearchBar from "./components/SearchBar/SearchBar"
-// import Table from "./components/Table/Table"
+import Jumbotron from "./components/Jumbotron";
+// import ContainerTwo from "./components/ContainerTwo"
+import EmployeeContainer from "./components/EmployeeContainer";
 
 function App() {
     return (
-        <Router>
+        <div>
             <Jumbotron />
             <div className="container">
-                
-                <SearchBar />
-
+            
+            {/* <ContainerTwo /> */}
+                <EmployeeContainer />
             </div>
-        </Router>
+        </div>
     )
 }
 
