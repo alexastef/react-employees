@@ -1,0 +1,19 @@
+.table-sortable > thead > tr > th {
+    cursor: pointer;
+    position: relative;
+}
+
+.table-sortable > thead > tr > th:after,
+.table-sortable > thead > tr > th:after,
+.table-sortable > thead > tr > th:after {
+    content: ' ';
+    position: absolute;
+    height: 0;
+    width: 0;
+    right: 10px;
+    top: 16px;
+}
+
+.sortable {
+    color: white;
+}
