@@ -46,6 +46,7 @@ function EmployeeTable(props) {
   }
 
     function sortFirstDescending(props) {
+        console.log("hitting here");
       function compare(a, b) {
         const empA = a.name.first.toUpperCase();
         const empB = b.name.first.toUpperCase();
