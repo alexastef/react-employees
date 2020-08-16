@@ -1,7 +1,11 @@
 import React from "react";
 import "./style.css";
 
-function SearchBar() {
+
+
+
+function SearchBar(props) {
+
   return (
     <div className="row justify-content-center">
       <div className="col-lg-6">
@@ -12,7 +16,8 @@ function SearchBar() {
               type="text"
               className="form-control"
               placeholder="Search Employees"
-              aria-describedby="button-addon2"
+              onChange={props.handleInputChange}
+              value={props.searchTerm}
             />
           </div>
         </form>
